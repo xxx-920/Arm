@@ -98,7 +98,9 @@
                 "c:\\Project\\STM32机械臂\\Libraries\\STM32F10x_StdPeriph_Driver\\src",
                 "c:\\Project\\STM32机械臂\\User\\ad",
                 "c:\\Project\\STM32机械臂\\User\\tim",
-                "c:\\Project\\STM32机械臂\\User\\oled"
+                "c:\\Project\\STM32机械臂\\User\\oled",
+                "c:\\Project\\STM32机械臂\\User\\servo",
+                "c:\\Project\\STM32机械臂\\User\\delay"
             ],
             "defines": [
                 "USE_STDPERIPH_DRIVER",

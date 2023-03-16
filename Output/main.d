@@ -29,3 +29,6 @@
 ..\output\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 ..\output\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 ..\output\main.o: ..\User\./ad/bsp_ad.h
+..\output\main.o: ..\User\./oled/oled.h
+..\output\main.o: ..\User\./tim/bsp_tim.h
+..\output\main.o: ..\User\./servo/bsp_servo.h

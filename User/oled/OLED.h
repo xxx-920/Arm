@@ -20,6 +20,8 @@ void OLED_ShowChar(uint8_t Line, uint8_t Column, char Char);
 void OLED_ShowString(uint8_t Line, uint8_t Column, char *String);
 /*OLED显示数字（十进制，正数）*/
 void OLED_ShowNum(uint8_t Line, uint8_t Column, uint32_t Number, uint8_t Length);
+/*OLED显示浮点数（十进制，正数）*/
+void OLED_Showfloat(uint8_t Line, uint8_t Column, float Number);
 /* OLED显示数字（十进制，带符号数）*/
 void OLED_ShowSignedNum(uint8_t Line, uint8_t Column, int32_t Number, uint8_t Length);
 /*OLED显示数字（十六进制，正数）*/

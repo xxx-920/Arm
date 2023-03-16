@@ -738,6 +738,26 @@
               <FileType>5</FileType>
               <FilePath>..\User\oled\OLED_Font.h</FilePath>
             </File>
+            <File>
+              <FileName>bsp_servo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\servo\bsp_servo.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_servo.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\servo\bsp_servo.h</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\delay\bsp_delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_delay.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\delay\bsp_delay.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

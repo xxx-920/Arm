@@ -3,6 +3,7 @@
         "stm32f10x.h": "c",
         "bsp_robot_arm.h": "c",
         "bsp_ad.h": "c",
-        "oled.h": "c"
+        "oled.h": "c",
+        "bsp_delay.h": "c"
     }
 }

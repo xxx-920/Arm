@@ -196,6 +196,20 @@ void OLED_ShowNum(uint8_t Line, uint8_t Column, uint32_t Number, uint8_t Length)
 }
 
 /**
+  * @brief  OLED显示浮点数（十进制，正数）
+  * @param  Line 起始行位置，范围：1~4
+  * @param  Column 起始列位置，范围：1~16
+  * @param  Number 要显示的数字，范围：0~4294967295
+  * @retval 无
+  */
+void OLED_Showfloat(uint8_t Line, uint8_t Column, float Number)
+{
+	char str[1];
+	sprintf(str,"%3.1f",Number);
+	OLED_ShowString(Line,Column,str);
+}
+
+/**
   * @brief  OLED显示数字（十进制，带符号数）
   * @param  Line 起始行位置，范围：1~4
   * @param  Column 起始列位置，范围：1~16
