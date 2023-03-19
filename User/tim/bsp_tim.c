@@ -13,7 +13,7 @@ static void PWM_TIM_GPIO_Config(void){
     /*≈‰÷√…œ¿≠ ‰»Î*/
     GPIO_InitTypeDef    GPIO_InitStructure;
     GPIO_InitStructure.GPIO_Pin = PWM_TIM_CH1_PIN | PWM_TIM_CH2_PIN;
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
     GPIO_InitStructure.GPIO_Speed =GPIO_Speed_50MHz;
     GPIO_Init(PWM_TIM_CH1_PORT, &GPIO_InitStructure);
 

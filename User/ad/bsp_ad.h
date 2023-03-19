@@ -3,6 +3,14 @@
 
 # include "stm32f10x.h"
 
+/*DMA 宏定义*/
+# define DMAx                       DMA1
+# define DMAx_AHBPeriph_FUN         RCC_AHBPeriphClockCmd
+# define DMAx_CLK                   RCC_AHBPeriph_DMA1
+
+# define DMAx_CHANNELx              DMA1_Channel1
+
+/*ADC 宏定义*/
 # define ADCx                       ADC1
 # define ADCx_APBxClock_FUN         RCC_APB2PeriphClockCmd
 # define ADCx_CLK                   RCC_APB2Periph_ADC1
@@ -29,6 +37,5 @@
 
 /*---------------------函数定义---------------------*/
 void ADCx_Init(void);                               //ADC 初始化
-uint16_t ADC_GetValue(uint8_t ADC_Channel);         //获取ADC结果
 
 # endif /*_BSP_AD_H*/
