@@ -3,7 +3,7 @@
 
 # include "stm32f10x.h"
 
-/*----------------------º¯Êý¶¨Òå----------------------*/
+/*----------------------å‡½æ•°å®šä¹‰----------------------*/
 void Servo_Init(void);
 void Servo_SetAngle1(float Angle);
 void Servo_SetAngle2(float Angle);

@@ -89,18 +89,18 @@
         {
             "name": "STCF103C8T6",
             "includePath": [
-                "c:\\Project\\STM32机械臂\\User",
-                "c:\\Project\\STM32机械臂\\Libraries\\CMSIS",
-                "c:\\Project\\STM32机械臂\\Libraries\\STM32F10x_StdPeriph_Driver\\inc",
-                "C:\\App\\keil5MDK\\ARM\\ARMCC\\include",
-                "C:\\App\\keil5MDK\\ARM\\ARMCC\\include\\rw",
-                "c:\\Project\\STM32机械臂\\Libraries\\CMSIS\\startup",
-                "c:\\Project\\STM32机械臂\\Libraries\\STM32F10x_StdPeriph_Driver\\src",
-                "c:\\Project\\STM32机械臂\\User\\ad",
-                "c:\\Project\\STM32机械臂\\User\\tim",
-                "c:\\Project\\STM32机械臂\\User\\oled",
-                "c:\\Project\\STM32机械臂\\User\\servo",
-                "c:\\Project\\STM32机械臂\\User\\delay"
+                "c:\\Project\\单片机_Project\\STM32_Project\\STM32机械臂\\User",
+                "c:\\Project\\单片机_Project\\STM32_Project\\STM32机械臂\\Libraries\\CMSIS",
+                "c:\\Project\\单片机_Project\\STM32_Project\\STM32机械臂\\Libraries\\STM32F10x_StdPeriph_Driver\\inc",
+                "C:\\Software\\STM32_soft\\Keil\\ARM\\ARMCC\\include",
+                "C:\\Software\\STM32_soft\\Keil\\ARM\\ARMCC\\include\\rw",
+                "c:\\Project\\单片机_Project\\STM32_Project\\STM32机械臂\\Libraries\\CMSIS\\startup",
+                "c:\\Project\\单片机_Project\\STM32_Project\\STM32机械臂\\Libraries\\STM32F10x_StdPeriph_Driver\\src",
+                "c:\\Project\\单片机_Project\\STM32_Project\\STM32机械臂\\User\\ad",
+                "c:\\Project\\单片机_Project\\STM32_Project\\STM32机械臂\\User\\tim",
+                "c:\\Project\\单片机_Project\\STM32_Project\\STM32机械臂\\User\\oled",
+                "c:\\Project\\单片机_Project\\STM32_Project\\STM32机械臂\\User\\servo",
+                "c:\\Project\\单片机_Project\\STM32_Project\\STM32机械臂\\User\\delay"
             ],
             "defines": [
                 "USE_STDPERIPH_DRIVER",

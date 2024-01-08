@@ -4,9 +4,9 @@
 # include "./delay/bsp_delay.h"
 
 /**
-  * @brief  ËÅ·şÏµÍ³³õÊ¼»¯
-  * @param  ÎŞ
-  * @retval ÎŞ
+  * @brief  ä¼ºæœç³»ç»Ÿåˆå§‹åŒ–
+  * @param  æ— 
+  * @retval æ— 
   */
 void Servo_Init(void){
 
@@ -15,9 +15,9 @@ void Servo_Init(void){
  }
 
 /**
-  * @brief  ÉèÖÃ¶æ»ú 1 µÄ½Ç¶È
-  * @param  ÎŞ
-  * @retval ÎŞ
+  * @brief  è®¾ç½®èˆµæœº 1 çš„è§’åº¦
+  * @param  æ— 
+  * @retval æ— 
   */
 void Servo_SetAngle1(float Angle){
 
@@ -25,9 +25,9 @@ void Servo_SetAngle1(float Angle){
 }
 
 /**
-  * @brief  ÉèÖÃ¶æ»ú 2 µÄ½Ç¶È
-  * @param  ÎŞ
-  * @retval ÎŞ
+  * @brief  è®¾ç½®èˆµæœº 2 çš„è§’åº¦
+  * @param  æ— 
+  * @retval æ— 
   */
 void Servo_SetAngle2(float Angle){
 
@@ -35,9 +35,9 @@ void Servo_SetAngle2(float Angle){
 }
 
 /**
-  * @brief  ÉèÖÃ¶æ»ú 3 µÄ½Ç¶È
-  * @param  ÎŞ
-  * @retval ÎŞ
+  * @brief  è®¾ç½®èˆµæœº 3 çš„è§’åº¦
+  * @param  æ— 
+  * @retval æ— 
   */
 void Servo_SetAngle3(float Angle){
 
@@ -45,9 +45,9 @@ void Servo_SetAngle3(float Angle){
 }
 
 /**
-  * @brief  ÉèÖÃ¶æ»ú 4 µÄ½Ç¶È
-  * @param  ÎŞ
-  * @retval ÎŞ
+  * @brief  è®¾ç½®èˆµæœº 4 çš„è§’åº¦
+  * @param  æ— 
+  * @retval æ— 
   */
 void Servo_SetAngle4(float Angle){
 

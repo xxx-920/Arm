@@ -2,7 +2,7 @@
 ..\output\stm32f10x_adc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
 ..\output\stm32f10x_adc.o: ..\Libraries\CMSIS\stm32f10x.h
 ..\output\stm32f10x_adc.o: ..\Libraries\CMSIS\core_cm3.h
-..\output\stm32f10x_adc.o: C:\App\keil5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\stm32f10x_adc.o: C:\Software\STM32_soft\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 ..\output\stm32f10x_adc.o: ..\Libraries\CMSIS\system_stm32f10x.h
 ..\output\stm32f10x_adc.o: ..\User\stm32f10x_conf.h
 ..\output\stm32f10x_adc.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h

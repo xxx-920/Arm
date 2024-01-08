@@ -2,7 +2,7 @@
 ..\output\bsp_servo.o: ..\User\./servo/bsp_servo.h
 ..\output\bsp_servo.o: ..\Libraries\CMSIS\stm32f10x.h
 ..\output\bsp_servo.o: ..\Libraries\CMSIS\core_cm3.h
-..\output\bsp_servo.o: C:\App\keil5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\bsp_servo.o: C:\Software\STM32_soft\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 ..\output\bsp_servo.o: ..\Libraries\CMSIS\system_stm32f10x.h
 ..\output\bsp_servo.o: ..\User\stm32f10x_conf.h
 ..\output\bsp_servo.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h

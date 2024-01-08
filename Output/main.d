@@ -1,7 +1,7 @@
 ..\output\main.o: ..\User\main.c
 ..\output\main.o: ..\Libraries\CMSIS\stm32f10x.h
 ..\output\main.o: ..\Libraries\CMSIS\core_cm3.h
-..\output\main.o: C:\App\keil5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\main.o: C:\Software\STM32_soft\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 ..\output\main.o: ..\Libraries\CMSIS\system_stm32f10x.h
 ..\output\main.o: ..\User\stm32f10x_conf.h
 ..\output\main.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h

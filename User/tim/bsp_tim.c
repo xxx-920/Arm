@@ -1,16 +1,16 @@
 # include "./tim/bsp_tim.h"
 
 /**
- *  @brief  TIM GPIO ³õÊ¼»¯
- *  @param  ÎŞ
- *  @retval ÎŞ
+ *  @brief  TIM GPIO åˆå§‹åŒ–
+ *  @param  æ— 
+ *  @retval æ— 
  */
 static void PWM_TIM_GPIO_Config(void){
 
     RCC_APB2PeriphClockCmd(PWM_TIM_CH1_GPIO_CLK, ENABLE);
     RCC_APB2PeriphClockCmd(PWM_TIM_CH3_GPIO_CLK, ENABLE);
 
-    /*ÅäÖÃÉÏÀ­ÊäÈë*/
+    /*é…ç½®ä¸Šæ‹‰è¾“å…¥*/
     GPIO_InitTypeDef    GPIO_InitStructure;
     GPIO_InitStructure.GPIO_Pin = PWM_TIM_CH1_PIN | PWM_TIM_CH2_PIN;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
@@ -22,16 +22,16 @@ static void PWM_TIM_GPIO_Config(void){
 }
 
 /**
- *  @brief  TIM Ä£Ê½³õÊ¼»¯
- *  @param  ÎŞ
- *  @retval ÎŞ
+ *  @brief  TIM æ¨¡å¼åˆå§‹åŒ–
+ *  @param  æ— 
+ *  @retval æ— 
  */
 static void PWM_TIM_Mode_Config(void){
 
     PWM_TIM_APBxClock_FUN(PWM_TIM_CLK, ENABLE);
 
-    /*---------------Ê±»ùÅäÖÃ---------------*/
-    TIM_InternalClockConfig(PWM_TIM);       //Ñ¡ÔñÄÚ²¿Ê±ÖÓ
+    /*---------------æ—¶åŸºé…ç½®---------------*/
+    TIM_InternalClockConfig(PWM_TIM);       //é€‰æ‹©å†…éƒ¨æ—¶é’Ÿ
     TIM_TimeBaseInitTypeDef     TIM_TimeBaseStructure;
     TIM_TimeBaseStructure.TIM_ClockDivision = TIM_CKD_DIV1;
     TIM_TimeBaseStructure.TIM_Period = PWM_ARR_Period;
@@ -39,23 +39,23 @@ static void PWM_TIM_Mode_Config(void){
     TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
     TIM_TimeBaseInit(PWM_TIM, &TIM_TimeBaseStructure);
 
-    /*---------------Êä³öÍ¨µÀÅäÖÃ---------------*/
+    /*---------------è¾“å‡ºé€šé“é…ç½®---------------*/
     TIM_OCInitTypeDef       TIM_OCInitStructure;
-    TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;       //PWM1Ä£Ê½
-    TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;   //¸ßµçÆ½ÓĞĞ§
-    TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;   //Ê¹ÄÜ
+    TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;       //PWM1æ¨¡å¼
+    TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;   //é«˜ç”µå¹³æœ‰æ•ˆ
+    TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;   //ä½¿èƒ½
     TIM_OCInitStructure.TIM_Pulse = 0;      //CCR
     TIM_OC1Init(PWM_TIM, &TIM_OCInitStructure);
     TIM_OC2Init(PWM_TIM, &TIM_OCInitStructure);
     TIM_OC3Init(PWM_TIM, &TIM_OCInitStructure);
     TIM_OC4Init(PWM_TIM, &TIM_OCInitStructure);
-    TIM_Cmd(PWM_TIM, ENABLE);       //Ê¹ÄÜ¶¨Ê±Æ÷
+    TIM_Cmd(PWM_TIM, ENABLE);       //ä½¿èƒ½å®šæ—¶å™¨
 }
 
 /**
- *  @brief  TIM ³õÊ¼»¯
- *  @param  ÎŞ
- *  @retval ÎŞ
+ *  @brief  TIM åˆå§‹åŒ–
+ *  @param  æ— 
+ *  @retval æ— 
  */
 void PWM_TIM_Init(void){
 
@@ -64,36 +64,36 @@ void PWM_TIM_Init(void){
 }
 
 /**
- *  @brief  ÉèÖÃÍ¨µÀ 1Õ¼¿Õ±È
- *  @param  ÎŞ
- *  @retval ÎŞ
+ *  @brief  è®¾ç½®é€šé“ 1å ç©ºæ¯”
+ *  @param  æ— 
+ *  @retval æ— 
  */
 void PWM_SetCompare1(uint16_t Compare){
     TIM_SetCompare1(PWM_TIM, Compare);
 }
 
 /**
- *  @brief  ÉèÖÃÍ¨µÀ 2Õ¼¿Õ±È
- *  @param  ÎŞ
- *  @retval ÎŞ
+ *  @brief  è®¾ç½®é€šé“ 2å ç©ºæ¯”
+ *  @param  æ— 
+ *  @retval æ— 
  */
 void PWM_SetCompare2(uint16_t Compare){
     TIM_SetCompare2(PWM_TIM, Compare);
 }
 
 /**
- *  @brief  ÉèÖÃÍ¨µÀ 3Õ¼¿Õ±È
- *  @param  ÎŞ
- *  @retval ÎŞ
+ *  @brief  è®¾ç½®é€šé“ 3å ç©ºæ¯”
+ *  @param  æ— 
+ *  @retval æ— 
  */
 void PWM_SetCompare3(uint16_t Compare){
     TIM_SetCompare3(PWM_TIM, Compare);
 }
 
 /**
- *  @brief  ÉèÖÃÍ¨µÀ 4Õ¼¿Õ±È
- *  @param  ÎŞ
- *  @retval ÎŞ
+ *  @brief  è®¾ç½®é€šé“ 4å ç©ºæ¯”
+ *  @param  æ— 
+ *  @retval æ— 
  */
 void PWM_SetCompare4(uint16_t Compare){
     TIM_SetCompare4(PWM_TIM, Compare);

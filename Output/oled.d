@@ -2,7 +2,7 @@
 ..\output\oled.o: ..\User\./oled/OLED_Font.h
 ..\output\oled.o: ..\Libraries\CMSIS\stm32f10x.h
 ..\output\oled.o: ..\Libraries\CMSIS\core_cm3.h
-..\output\oled.o: C:\App\keil5MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\oled.o: C:\Software\STM32_soft\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 ..\output\oled.o: ..\Libraries\CMSIS\system_stm32f10x.h
 ..\output\oled.o: ..\User\stm32f10x_conf.h
 ..\output\oled.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h

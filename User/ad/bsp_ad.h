@@ -3,39 +3,39 @@
 
 # include "stm32f10x.h"
 
-/*DMA ∫Í∂®“Â*/
+/*DMA ÂÆèÂÆö‰πâ*/
 # define DMAx                       DMA1
 # define DMAx_AHBPeriph_FUN         RCC_AHBPeriphClockCmd
 # define DMAx_CLK                   RCC_AHBPeriph_DMA1
 
 # define DMAx_CHANNELx              DMA1_Channel1
 
-/*ADC ∫Í∂®“Â*/
+/*ADC ÂÆèÂÆö‰πâ*/
 # define ADCx                       ADC1
 # define ADCx_APBxClock_FUN         RCC_APB2PeriphClockCmd
 # define ADCx_CLK                   RCC_APB2Periph_ADC1
 
-/*ADC Õ®µ¿ 1*/
+/*ADC ÈÄöÈÅì 1*/
 # define ADCx_IN1_GPIO_CLK          RCC_APB2Periph_GPIOA
 # define ADCx_IN1_PORT              GPIOA
 # define ADCx_IN1_PIN               GPIO_Pin_0
 
-/*ADC Õ®µ¿ 2*/
+/*ADC ÈÄöÈÅì 2*/
 # define ADCx_IN2_GPIO_CLK          RCC_APB2Periph_GPIOA
 # define ADCx_IN2_PORT              GPIOA
 # define ADCx_IN2_PIN               GPIO_Pin_1
 
-/*ADC Õ®µ¿ 3*/
+/*ADC ÈÄöÈÅì 3*/
 # define ADCx_IN3_GPIO_CLK          RCC_APB2Periph_GPIOA
 # define ADCx_IN3_PORT              GPIOA
 # define ADCx_IN3_PIN               GPIO_Pin_2
 
-/*TIM Õ®µ¿ 4*/
+/*TIM ÈÄöÈÅì 4*/
 # define ADCx_IN4_GPIO_CLK          RCC_APB2Periph_GPIOA
 # define ADCx_IN4_PORT              GPIOA
 # define ADCx_IN4_PIN               GPIO_Pin_3
 
-/*---------------------∫Ø ˝∂®“Â---------------------*/
-void ADCx_Init(void);                               //ADC ≥ı ºªØ
+/*---------------------ÂáΩÊï∞ÂÆö‰πâ---------------------*/
+void ADCx_Init(void);                               //ADC ÂàùÂßãÂåñ
 
 # endif /*_BSP_AD_H*/
